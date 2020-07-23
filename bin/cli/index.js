@@ -15,6 +15,13 @@ const logRoot = require('log'),
 
 ;(async () => {
 	log.info(`Node version: ${process.versions.node}`)
+	log.warn(
+`The 32-bit TERA client will be discontinued with the release of patch 97, between 2020-07-27   and 2020-08-17 (depending on game region). Update your system before then if you wish to continue playing!
+
+You can download the 64-bit version of TERA Proxy from: https://github.com/tera-proxy/tera-proxy/archive/master.zip
+The 32-bit version will no longer be updated, but will continue working until the next patch.
+`
+	)
 
 	try {
 		await new Promise((resolve, reject) => {
